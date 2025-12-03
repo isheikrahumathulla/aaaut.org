@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Committee | UVOCCET Alumni Association</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#981014', secondary: '#f3f4f6' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="images/simple_circular_university_logo_with_voc_letters.png" alt="Logo" class="h-12 w-12 object-contain group-hover:scale-105 transition-transform duration-300">
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-lg text-primary leading-tight">Alumni Association</span>
+                    <span class="text-xs text-gray-500 font-medium tracking-wider">UVOCE, Thoothukudi</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-6">
+                <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-primary">Home</a>
+                <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-primary">About</a>
+                <!-- <a href="history.html" class="text-sm font-medium text-gray-600 hover:text-primary">History</a> -->
+                <a href="committee.html" class="text-sm font-medium text-primary font-semibold hover:text-primary">Committee</a>
+                <a href="events.html" class="text-sm font-medium text-gray-600 hover:text-primary">Events</a>
+                <a href="gallery.html" class="text-sm font-medium text-gray-600 hover:text-primary">Gallery</a>
+                <a href="donate.html" class="text-sm font-medium text-gray-600 hover:text-primary">Donate</a>
+                <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-primary">Contact</a>
+                <a href="register.html" class="px-5 py-2 bg-primary text-white text-sm font-medium rounded-md hover:bg-primary/90 transition-all shadow-sm hover:shadow-md">Register</a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600 hover:text-primary">
+                <i data-lucide="menu" id="menu-icon"></i>
+                <i data-lucide="x" id="close-icon" class="hidden"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white absolute w-full left-0 shadow-lg slide-in">
+            <nav class="flex flex-col p-4 gap-2">
+                <a href="index.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Home</a>
+                <a href="about.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">About</a>
+                <!-- <a href="history.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">History</a> -->
+                <a href="committee.html" class="px-4 py-3 rounded-md bg-red-50 text-primary font-semibold">Committee</a>
+                <a href="events.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Events</a>
+                <a href="gallery.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Gallery</a>
+                <a href="donate.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Donate</a>
+                <a href="contact.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Contact</a>
+                <a href="register.html" class="mt-2 w-full text-center px-4 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary/90">Register Now</a>
+            </nav>
+        </div>
+    </header>
+
+<main class="flex-1 bg-white">
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="mb-12 md:mb-16 text-center fade-in-up">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 relative inline-block">
+                    Executive Committee
+                    <span class="absolute -bottom-4 left-1/2 w-16 h-1 bg-primary -translate-x-1/2 rounded-full opacity-80"></span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed pt-4">
+                    Meet the dedicated team working behind the scenes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 fade-in-up">
+                <!-- Member 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Gayton Daniel Raja" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Gayton Daniel Raja</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">President</p>
+                </div>
+
+                <!-- Member 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Dr. C. Peter Devadoss" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Dr. C. Peter Devadoss</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Dean (i/c) – Vice President</p>
+                </div>
+
+                <!-- Member 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Dr. S. Rajakumar" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Dr. S. Rajakumar</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Honorary Advisor</p>
+                </div>
+
+                <!-- Member 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Abdul Vathuth A" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Abdul Vathuth A</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Secretary</p>
+                </div>
+
+                <!-- Member 5 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Bharath V G" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Bharath V G</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Treasurer</p>
+                </div>
+
+                <!-- Member 6 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Ahamed Meeran S" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Ahamed Meeran S</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Vice President</p>
+                </div>
+
+                <!-- Member 7 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Inba Sathish Kumar M" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Inba Sathish Kumar M</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Vice President</p>
+                </div>
+
+                <!-- Member 8 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Kannan T" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Kannan T</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Joint Secretary</p>
+                </div>
+
+                <!-- Member 9 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Mohamed Shiek Ismail R" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Mohamed Sheik Ismail R</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Joint Secretary</p>
+                </div>
+
+                <!-- Member 10 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mrs. Niffensha I" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mrs. Niffensha I</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Joint Secretary</p>
+                </div>
+
+                <!-- Member 11 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Essakimuthu A" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Essakimuthu A</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Committee Member</p>
+                </div>
+
+                <!-- Member 12 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Gesava Manikanda Barathram U" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Gesava Manikanda Barathram U</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Committee Member</p>
+                </div>
+
+                <!-- Member 13 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Surendar M" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Surendar M</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Committee Member</p>
+                </div>
+
+                <!-- Member 14 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Siva Sakesh T" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Siva Sakesh T</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Committee Member</p>
+                </div>
+
+                <!-- Member 15 -->
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 hover:border-primary/30 transition-all hover:-translate-y-1 hover:shadow-md group text-center">
+                    <img src="images/Core_committee/corecommittee01.png" alt="Mr. Naveen A S" class="w-32 h-32 mx-auto rounded-full mb-6 object-cover">
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-1">Mr. Naveen A S</h3>
+                    <p class="text-primary font-medium text-sm uppercase tracking-wide mb-4">Committee Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+    
+    <!-- Footer (Same as index) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-red-900/30">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-serif font-bold text-white">UVOCE Alumni</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Anna University Thoothukudi Campus Alumni Association<br/>(REG- 70/2013)</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-red-500">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <!-- <li><a href="history.html" class="hover:text-white transition-colors">College History</a></li> -->
+                        <li><a href="directory.html" class="hover:text-white transition-colors">Alumni Directory</a></li>
+                        <li><a href="events.html" class="hover:text-white transition-colors">Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-red-500">Contact Us</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin" class="text-red-500 w-5 h-5 mt-0.5"></i><span>University VOC College of Engineering,<br/>Thoothukudi - 628008</span></li>
+                        <li class="flex items-center gap-3"><i data-lucide="phone" class="text-red-500 w-5 h-5"></i><span>+91 461 231 0044</span></li>
+                        <li class="flex items-center gap-3"><i data-lucide="mail" class="text-red-500 w-5 h-5"></i><span>deanautut@annauniv.edu</span></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-red-500">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/universitycollegeofengineering.thoothukudi/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white"><i data-lucide="X" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <p>© 2025 UVOCCET Alumni Association. All rights reserved.</p>
+                <p>Designed with care for the Alumni Community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
