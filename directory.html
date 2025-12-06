@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directory | UVOCCET Alumni Association</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { primary: '#981014', secondary: '#f3f4f6' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full bg-white/95 backdrop-blur border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <img src="images/simple_circular_university_logo_with_voc_letters.png" alt="Logo" class="h-12 w-12 object-contain group-hover:scale-105 transition-transform duration-300">
+                <div class="flex flex-col">
+                    <span class="font-serif font-bold text-lg text-primary leading-tight">Alumni Association</span>
+                    <span class="text-xs text-gray-500 font-medium tracking-wider">University College of Engineering, Thoothukudi Campus</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex items-center gap-6">
+                <a href="index.html" class="text-sm font-medium text-gray-600 hover:text-primary">Home</a>
+                <a href="about.html" class="text-sm font-medium text-gray-600 hover:text-primary">About</a>
+                <!-- <a href="history.html" class="text-sm font-medium text-gray-600 hover:text-primary">History</a> -->
+                <a href="committee.html" class="text-sm font-medium text-gray-600 hover:text-primary">Committee</a>
+                <a href="events.html" class="text-sm font-medium text-gray-600 hover:text-primary">Events</a>
+                <a href="gallery.html" class="text-sm font-medium text-gray-600 hover:text-primary">Gallery</a>
+                <a href="donate.html" class="text-sm font-medium text-gray-600 hover:text-primary">Donate</a>
+                <a href="contact.html" class="text-sm font-medium text-gray-600 hover:text-primary">Contact</a>
+                <a href="register.html" class="px-5 py-2 bg-primary text-white text-sm font-medium rounded-md hover:bg-primary/90 transition-all shadow-sm hover:shadow-md">Register</a>
+            </nav>
+            <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600 hover:text-primary">
+                <i data-lucide="menu" id="menu-icon"></i>
+                <i data-lucide="x" id="close-icon" class="hidden"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden border-t border-gray-100 bg-white absolute w-full left-0 shadow-lg slide-in">
+            <nav class="flex flex-col p-4 gap-2">
+                <a href="index.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Home</a>
+                <a href="about.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">About</a>
+                <!-- <a href="history.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">History</a> -->
+                <a href="committee.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Committee</a>
+                <a href="events.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Events</a>
+                <a href="gallery.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Gallery</a>
+                <a href="donate.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Donate</a>
+                <a href="contact.html" class="px-4 py-3 rounded-md text-gray-600 hover:bg-gray-50 hover:text-primary">Contact</a>
+                <a href="register.html" class="mt-2 w-full text-center px-4 py-3 bg-primary text-white font-medium rounded-md hover:bg-primary/90">Register Now</a>
+            </nav>
+        </div>
+    </header>
+
+<main class="flex-1 bg-white">
+  <section class="py-16 md:py-24">
+    <div class="container mx-auto px-4 md:px-6">
+
+      <!-- Section Title -->
+      <div class="mb-12 md:mb-16 text-center fade-in-up">
+        <h2 class="text-3xl md:text-4xl font-serif font-bold text-gray-900 relative inline-block">
+          Alumni Directory
+          <span class="absolute -bottom-4 left-1/2 w-16 h-1 bg-primary -translate-x-1/2 rounded-full opacity-80"></span>
+        </h2>
+      </div>
+
+      <!-- Coming Soon / Under Development -->
+      <div class="max-w-2xl mx-auto text-center bg-gray-50 p-12 rounded-xl border border-gray-200 fade-in-up">
+
+        <div class="w-16 h-16 bg-blue-100 text-primary rounded-full flex items-center justify-center mx-auto mb-6">
+          <i data-lucide="users" class="w-8 h-8"></i>
+        </div>
+
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          Alumni Directory & Network
+        </h3>
+
+        <p class="text-gray-600 mb-6 leading-relaxed">
+          A comprehensive Alumni Directory for all batches of University V.O.C. College of Engineering, 
+          Thoothukudi is currently being developed. This platform will soon serve as a unified space 
+          for connection, collaboration, and engagement among our alumni community.
+        </p>
+
+        <div class="inline-flex items-center gap-2 text-sm font-medium text-gray-700 bg-white px-5 py-3 rounded-md border border-dashed border-gray-300">
+          <i data-lucide="loader" class="w-5 h-5 animate-spin"></i>
+          Under Development
+        </div>
+
+        <p class="text-xs text-gray-400 mt-6 italic">
+          The Alumni Core Committee is working on compiling and verifying records from all batches.  
+          This section will be updated soon.
+        </p>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+    
+    <!-- Footer (Same as index) -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8 border-t border-red-900/30">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div class="space-y-4">
+                    <h3 class="text-2xl font-serif font-bold text-white">UVOCE Alumni</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Anna University Thoothukudi Campus Alumni Association<br/>(Reg. 70/2013)</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-red-500">Quick Links</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <!-- <li><a href="history.html" class="hover:text-white transition-colors">College History</a></li> -->
+                        <li><a href="directory.html" class="hover:text-white transition-colors">Alumni Directory</a></li>
+                        <li><a href="events.html" class="hover:text-white transition-colors">Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-red-500">Contact Us</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li class="flex items-start gap-3"><i data-lucide="map-pin" class="text-red-500 w-5 h-5 mt-0.5"></i><span>University VOC College of Engineering,<br/>Thoothukudi - 628008</span></li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="phone" class="text-red-500 w-5 h-5 flex-shrink-0"></i>
+                            <a href="tel:+914612310044" class="hover:underline">+91 461 231 0044</a>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="mail" class="text-red-500 w-5 h-5 flex-shrink-0"></i>
+                            <div class="flex flex-col">
+                            <a href="mailto:uvoccealumniassociation@gmail.com" class="hover:underline">uvoccealumniassociation@gmail.com</a>
+                            <a href="mailto:aaaut4024@gmail.com" class="hover:underline">aaaut4024@gmail.com</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="text-lg font-semibold text-red-500">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/universitycollegeofengineering.thoothukudi/" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white"><i data-lucide="X" class="w-5 h-5"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors text-white"><i data-lucide="linkedin" class="w-5 h-5"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                <p>© 2025 UVOCCET Alumni Association. All rights reserved.</p>
+                <p>Designed with care for the Alumni Community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>lucide.createIcons();</script>
+</body>
+</html>
